@@ -3,12 +3,12 @@
 **Literal** — Declarative JavaScript templates directly inside HTML with minimal and safe reactivity.
 
 ---
-## Live Demo
+## 🚀 Live Demo
 
 [![Open in CodePen](https://img.shields.io/badge/Open%20in-CodePen-black?logo=codepen&logoColor=white)](https://codepen.io/leviato-tech/pen/WbbaXNJ)
 
 ---
-## 🚀 Features
+## ✨ Features
 
 - Write pure HTML templates using JavaScript template literals `${}`.
 - Automatic reactivity through direct data binding (`_data`).
@@ -44,21 +44,10 @@ and automatically updates when data changes.
 
 ---
 
-## Features
-
-- No build step, no tooling.
-- Native JavaScript template literal power.
-- Tiny: pure JS, no dependencies.
-- Instant reactivity via `Proxy`.
-- Works with any HTML element and attribute.
-- Elegant and declarative.
-
----
-
 ## Example
 
 ```html
-<h1 literal>Hello, ${name}!</h1>
+<h1 literal>Hello, ${name || 'world'}!</h1>
 
 <input 
   placeholder="Enter your name..." 
@@ -70,3 +59,6 @@ and automatically updates when data changes.
   });
 </script>
 ```
+📜 License
+
+MIT © 2025
