@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Literal Demo</title>
+  <script src="literal.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #111;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5vh;
+    }
+    input {
+      margin-top: 1em;
+      padding: 0.5em;
+      background: #222;
+      border: 1px solid #444;
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<h1 literal>Hello, ${name ?? "world"}!</h1>
+
+<input placeholder="Enter your name..." 
+       oninput="this.parentNode._data.name = this.value">
+
+</body>
+</html>
