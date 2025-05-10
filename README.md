@@ -3,7 +3,11 @@
 **Literal** — Declarative JavaScript templates directly inside HTML with minimal and safe reactivity.
 
 ---
+## Live Demo
 
+[![Open in CodePen](https://img.shields.io/badge/Open%20in-CodePen-black?logo=codepen&logoColor=white)](https://codepen.io/leviato-tech/pen/WbbaXNJ)
+
+---
 ## 🚀 Features
 
 - Write pure HTML templates using JavaScript template literals `${}`.
@@ -30,6 +34,7 @@ Literal updates your view automatically when it changes.
 
 ```html
 <script src="literal.js"></script># Literal
+```
 
 **Use JavaScript template literals directly inside your HTML.  
 Minimal, reactive, pure.**
@@ -55,5 +60,13 @@ and automatically updates when data changes.
 ```html
 <h1 literal>Hello, ${name}!</h1>
 
-<input placeholder="Enter your name..." 
-       oninput="this.parentNode._data.name = this.value">
+<input 
+  placeholder="Enter your name..." 
+  oninput="this.previousElementSibling._data.name = this.value">
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('h1[literal]')._data = { name: 'world' };
+  });
+</script>
+```
